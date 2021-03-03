@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo </title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-database.js"></script>
+    
+    
+<script>
+    // Your web app's Firebase configuration
+    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+    var firebaseConfig = {
+      apiKey: "AIzaSyCjE9CupDpjAQRk4zHwajFtVmMTz-UAmvk",
+      authDomain: "todo-6149e.firebaseapp.com",
+      databaseURL: "https://todo-6149e-default-rtdb.firebaseio.com",
+      projectId: "todo-6149e",
+      storageBucket: "todo-6149e.appspot.com",
+      messagingSenderId: "681082921858",
+      appId: "1:681082921858:web:e08cf2a93e458a2092659b",
+      measurementId: "G-CQTEV4RN1P"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+   
+  </script>
+     
+
+</head>
+
+<body>
+    <input placeholder="What Do You Want To Do......." type="text" class="inp" name="" id="inp">
+    <button onclick="addTodo()" class="btn">Add Todo</button>
+    <button onclick="deleteAll()" class="btn">Delete All</button>
+    <ul id="mainList"></ul>
+
+
+
+    <script src="app.js"></script>
+</body>
+
+</html>
